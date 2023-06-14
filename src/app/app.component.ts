@@ -6,6 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+  
 export class AppComponent implements OnInit{
   title = 'currency';
   dates: any;
