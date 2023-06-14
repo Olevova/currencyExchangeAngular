@@ -1,0 +1,9 @@
+<!-- <p *ngIf="isLoad">Loading....</p> -->
+<div>
+  <h2 style="margin: 5px 10px">{{ date.cc }}</h2>
+  <p style="margin: 5px 10px">Валюта: {{ date.txt }}</p>
+  <p style="margin: 5px 10px">
+    <span style="font-size: large">Ціна грн:</span>
+    {{ date.rate | number : "1.2-2" }}
+  </p>
+</div>

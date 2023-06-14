@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  color: white;
+  margin: 10px auto;
+}
+
+.convert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 700px;
+  height: 300px;
+  background-color: rgb(57, 98, 68);
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.convert div {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.convert input[type="number"],
+.convert select {
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.convert p {
+  text-align: center;
+  color: bisque;
+}
+
+span {
+  font-weight: bold;
+  color: white;
+}

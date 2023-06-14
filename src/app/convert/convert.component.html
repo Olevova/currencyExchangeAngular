@@ -1,0 +1,31 @@
+<main>
+  <section class="convert">
+    <h1 class="title">currency calculator</h1>
+    <p>Please change value in a field</p>
+    <div>
+      <input
+        type="number"
+        [(ngModel)]="firstValue"
+        (input)="convertFirstToSecond()"
+        min="0"
+      />
+      <select [(ngModel)]="firstCurrency" (change)="convertFirstToSecond()">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+      </select>
+      <span>to</span>
+      <input
+        type="number"
+        [(ngModel)]="secondValue"
+        (input)="convertSecondToFirst()"
+        min="0"
+      />
+      <select [(ngModel)]="secondCurrency" (change)="convertSecondToFirst()">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+      </select>
+    </div>
+  </section>
+</main>

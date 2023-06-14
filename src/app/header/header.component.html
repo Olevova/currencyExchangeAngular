@@ -1,0 +1,28 @@
+<header class="header">
+  <p class="logo">
+    Currensy
+    <span class="logo_color"> Exchange </span>
+  </p>
+  <nav class="navbar">
+    <ul class="navbar_ul">
+      <mat-icon
+        class="mat-icon-rtl-mirror"
+        style="color: white"
+        svgIcon="dollar"
+      ></mat-icon>
+      <li class="navbar_li">
+        <p>{{ getDataValue("USD")?.rate | number : "1.2-2" }}</p>
+        USD
+      </li>
+      <mat-icon
+        class="mat-icon-rtl-mirror"
+        style="color: white"
+        svgIcon="eur"
+      ></mat-icon>
+      <li class="navbar_li">
+        <p>{{ getDataValue("EUR")?.rate | number : "1.2-2" }}</p>
+        EUR
+      </li>
+    </ul>
+  </nav>
+</header>
